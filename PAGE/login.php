@@ -52,13 +52,15 @@
 	}
 
 ?>
-<html>
-<head>
+
+<?php
+$page_title = "Login";
+$file_name = "login.php";
+?>	
+
+<?php require_once("../header.php");?>
+
 	<style>.error {color: #FF0000;}</style>
-	<title>Login page</title>
-</head>
-<body>
-	
 	<h3>Mõtlesin siis teha lehe kuhu inimesed saavad teha postitusi erinevate teemade alla ja teised saavad siis kommenteerida, põhimõtteliselt väga lihtsustatud reddit</h3>
 	<h2>Login</h2>
 	<p><span class="error">* required field.</span></p>
@@ -84,5 +86,4 @@
 	<input type="submit" value="Create"> <br><br>
 	</form>
 	
-</body>
-</html>
+<?php require_once("../footer.php");?>
